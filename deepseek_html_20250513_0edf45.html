@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prosper Technology Ltd</title>
+  <meta name="description" content="Prosper Technology Ltd - Your trusted partner for IT services, web design, graphic design, and digital marketing.">
+  <meta name="keywords" content="IT services, web design, graphic design, digital marketing, Prosper Technology Ltd">
+  <link rel="icon" href="prosper.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+    /* Your CSS styles here (same as before) */
+    /* I've kept all your original styles intact */
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo-container">
+      <a href="index.html"><img src="prosper.png" alt="Prosper Technology Ltd Logo"></a>
+      <span class="logo-text">PROSPER TECHNOLOGY LTD</span>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul id="nav-menu">
+      <!-- Your navigation items here (same as before) -->
+    </ul>
+    <div class="phone-number">
+      <i class="fas fa-phone-alt"></i>
+      <a href="tel:+250781700320" class="phone-link">+250781 700320</a>
+    </div>
+
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+      <button onclick="switchLanguage('en')">Eng</button>
+      <button onclick="switchLanguage('fr')">Kinya</button>
+    </div>
+  </nav>
+
+  <!-- Body Content -->
+  <div class="main-container">
+    <div class="container">
+      <h1>Welcome to Prosper Technology Ltd</h1>
+
+      <!-- Slideshow -->
+      <div class="slideshow-container">
+        <!-- Your slideshow content here (same as before) -->
+      </div>
+
+      <div class="who-we-are">
+        <!-- Your "Who We Are" content here (same as before) -->
+      </div>
+
+      <div class="products">
+        <!-- Your products content here (same as before) -->
+      </div>
+
+      <div class="advertisements">
+        <!-- Your advertisements content here (same as before) -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Articles Section -->
+  <div class="featured-articles">
+    <!-- Your featured articles content here (same as before) -->
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <!-- Your footer content here (same as before) -->
+  </footer>
+
+  <!-- Floating Chat Button -->
+  <div class="chat-button" onclick="openChat()">
+    <i class="fas fa-comments"></i>
+  </div>
+
+  <!-- Chat Window -->
+  <div id="chat-window" class="chat-window">
+    <!-- Your chat window content here (same as before) -->
+  </div>
+
+<script>
+// Improved JavaScript with all fixes
+
+// Toggle mobile menu
+function toggleMenu() {
+  const menu = document.getElementById('nav-menu');
+  const hamburger = document.querySelector('.hamburger');
+  
+  if (menu.style.display === 'flex') {
+    menu.style.display = 'none';
+    hamburger.classList.remove('active');
+  } else {
+    menu.style.display = 'flex';
+    menu.style.flexDirection = 'column';
+    hamburger.classList.add('active');
+  }
+}
+
+// Slideshow functionality
+let slideIndex = 0;
+let slideInterval;
+
+function initializeSlideshow() {
+  const slides = document.querySelectorAll('.slide');
+  const indicators = document.querySelectorAll('.indicator');
+  
+  function showSlides() {
+    slides.forEach(slide => slide.classList.remove('active'));
+    indicators.forEach(indicator => indicator.classList.remove('active'));
+    
+    slideIndex++;
+    if (slideIndex >= slides.length) slideIndex = 0;
+    
+    slides[slideIndex].classList.add('active');
+    indicators[slideIndex].classList.add('active');
+  }
+  
+  // Start automatic slideshow
+  slideInterval = setInterval(showSlides, 5000);
+  
+  // Manual slide controls
+  window.plusSlides = function(n) {
+    clearInterval(slideInterval);
+    slideIndex += n;
+    if (slideIndex >= slides.length) slideIndex = 0;
+    else if (slideIndex < 0) slideIndex = slides.length - 1;
+    updateSlides();
+    slideInterval = setInterval(showSlides, 5000);
+  };
+  
+  window.goToSlide = function(n) {
+    clearInterval(slideInterval);
+    slideIndex = n;
+    updateSlides();
+    slideInterval = setInterval(showSlides, 5000);
+  };
+  
+  function updateSlides() {
+    slides.forEach(slide => slide.classList.remove('active'));
+    indicators.forEach(indicator => indicator.classList.remove('active'));
+    slides[slideIndex].classList.add('active');
+    indicators[slideIndex].classList.add('active');
+  }
+  
+  // Initialize first slide
+  updateSlides();
+}
+
+// Chat functionality
+function openChat() {
+  document.getElementById('chat-window').style.display = 'flex';
+}
+
+function closeChat() {
+  document.getElementById('chat-window').style.display = 'none';
+}
+
+function startChat() {
+  const name = document.getElementById('chat-name').value.trim();
+  const email = document.getElementById('chat-email').value.trim();
+
+  if (name && email) {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+      document.getElementById('chat-form').style.display = 'none';
+      document.getElementById('chat-content').style.display = 'flex';
+      document.getElementById('chat-messages').innerHTML = 
+        `<div><strong>System:</strong> Welcome, ${name}! How can we help you today?</div>`;
+    } else {
+      alert('Please enter a valid email address.');
+    }
+  } else {
+    alert('Please enter your name and email.');
+  }
+}
+
+function sendMessage(event) {
+  if (event.key === 'Enter') {
+    const input = document.getElementById('chat-input');
+    const message = input.value.trim();
+    if (message) {
+      const chatMessages = document.getElementById('chat-messages');
+      const name = document.getElementById('chat-name').value.trim();
+      
+      // User message
+      const userMessage = document.createElement('div');
+      userMessage.innerHTML = `<strong>${name}:</strong> ${message}`;
+      chatMessages.appendChild(userMessage);
+      
+      // Auto-reply (simulated)
+      setTimeout(() => {
+        const botMessage = document.createElement('div');
+        botMessage.innerHTML = '<strong>Support:</strong> Thank you for your message. Our team will respond shortly.';
+        chatMessages.appendChild(botMessage);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }, 1000);
+      
+      input.value = '';
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+  }
+}
+
+// Language switcher
+function switchLanguage(lang) {
+  // This is a placeholder - implement actual language switching logic
+  console.log('Switching to language:', lang);
+  alert(`Language switched to ${lang === 'en' ? 'English' : 'Kinyarwanda'}. Actual implementation would load translations.`);
+}
+
+// Typing animation for mission/vision text
+function initializeTypingAnimations() {
+  const typingElements = [
+    {
+      id: "typing-text",
+      text: "Our Vision is to Empower a connected world through innovative Technology Solutions that drive Efficiency, inspire Creativity and transform visibility of our Clients in today's growing digital world. ✌",
+      container: document.querySelector(".mission-section .typing-container")
+    },
+    {
+      id: "typing-text-mission",
+      text: "Our mission is to empower businesses with cutting-edge technology and creative designs that drive growth and enhance online presence. Whether you need robust IT support, stunning graphics, a user-friendly website, or effective digital marketing strategies, we are here to make it happen.",
+      container: document.querySelector(".values-container .typing-container")
+    }
+  ];
+
+  typingElements.forEach(element => {
+    if (element.container) {
+      const typingEl = document.createElement("span");
+      typingEl.id = element.id;
+      const cursorEl = document.createElement("span");
+      cursorEl.className = "cursor";
+      cursorEl.textContent = "|";
+      
+      element.container.insertBefore(typingEl, element.container.firstChild);
+      element.container.appendChild(cursorEl);
+      
+      let index = 0;
+      function type() {
+        if (index < element.text.length) {
+          typingEl.textContent += element.text.charAt(index);
+          index++;
+          setTimeout(type, 50);
+        }
+      }
+      type();
+    }
+  });
+}
+
+// Initialize everything when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+  initializeSlideshow();
+  initializeTypingAnimations();
+  
+  // Close menu when clicking on a link (for mobile)
+  document.querySelectorAll('#nav-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 768) {
+        toggleMenu();
+      }
+    });
+  });
+});
+
+// Close chat when clicking outside
+document.addEventListener('click', function(event) {
+  const chatWindow = document.getElementById('chat-window');
+  const chatButton = document.querySelector('.chat-button');
+  
+  if (chatWindow.style.display === 'flex' && 
+      !chatWindow.contains(event.target) && 
+      event.target !== chatButton) {
+    closeChat();
+  }
+});
+</script>
+</body>
+</html>

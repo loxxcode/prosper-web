@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prosper Technology Ltd provides IT consultancy, web design, graphic design, and digital marketing services in Kigali, Rwanda. Empowering businesses with innovative technology solutions.">
+  <meta name="keywords" content="IT consultancy, web design, graphic design, digital marketing, IT services, Kigali, Rwanda, Prosper Technology, technology solutions, web development">
+  <meta name="author" content="Prosper Technology Ltd">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Prosper Technology Ltd - IT Solutions in Kigali, Rwanda">
+  <meta property="og:description" content="Trusted IT services including web design, graphic design, and digital marketing to help businesses thrive in the digital age. Based in Kigali, Rwanda.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.prospertechltd.com">
+  <meta property="og:image" content="https://www.prospertechltd.com/images/logo.jpg">
+  <meta property="og:site_name" content="Prosper Technology Ltd">
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prosper Technology Ltd - IT Solutions in Kigali, Rwanda">
+  <meta name="twitter:description" content="Trusted IT services including web design, graphic design, and digital marketing in Kigali, Rwanda.">
+  <meta name="twitter:image" content="https://www.prospertechltd.com/images/logo.jpg">
+  <title>Prosper Technology Ltd - IT Solutions in Kigali, Rwanda</title>
+  <link rel="icon" href="images/prosperfav.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+ </head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="contact-info">
+      <i class="fas fa-phone"></i>
+      <a href="tel:+250781700320" class="phone-link">+250781 700320</a>
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:info@prospertechltd.com">info@prospertechltd.com</a>
+      <i class="fas fa-map-marker-alt"></i>
+      <a href="#location">KN 85 St, Opposite ADEPR Nyarugenge, Kigali-Rwanda</a>
+    </div>
+    <div class="top-bar-right">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=100063862875158" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/ProsperTechno" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.youtube.com/@prospertechnology4975" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/prosper-technology-rwanda-b00513272" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/prospertechnology" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="language-switcher">
+        <div class="dropdown">
+          <button class="dropbtn" id="lang-btn">
+      <img src="uk-flag.png" alt="Language Flag" class="flag-icon">
+      <span data-translate="lang-eng">Eng</span>
+      <i class="fas fa-chevron-down"></i>
+    </button>
+    <div class="dropdown-content" id="lang-dropdown">
+      <a href="#" onclick="switchLanguage('en')">
+        <img src="uk-flag.png" alt="UK Flag" class="flag-icon">
+        <span data-translate="lang-eng">English</span>
+      </a>
+      <a href="#" onclick="switchLanguage('rw')">
+        <img src="rwanda-flag.png" alt="Rwanda Flag" class="flag-icon">
+        <span data-translate="lang-kinya">Kinyarwanda</span>
+      </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/prosper.png" alt="Prosper Technology Logo">
+    </div>
+    <div class="title">
+      <h1 data-translate="welcome">Prosper Technology Ltd</h1>
+    </div>
+    <div class="hamburger" onclick="toggleMenu(this)">
+  <div class="hamburger-line"></div>
+  <div class="hamburger-line"></div>
+  <div class="hamburger-line"></div>
+</div>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="index.html" data-translate="nav-home">Home</a></li>
+        <li class="dropdown">
+          <a href="#" data-translate="nav-services">Services</a>
+          <div class="dropdown-content">
+            <a href="web_dev.html" data-translate="nav-web-development">Web Development</a>
+            <a href="mobile_apps.html" data-translate="nav-mobile-apps">Mobile Apps</a>
+            <a href="graphics_design.html" data-translate="nav-graphics-design">Graphics Design</a>
+            <a href="branding.html" data-translate="nav-branding">Branding</a>
+            <a href="comp_training.html" data-translate="nav-computer-training">Computer Training</a>
+            <a href="comp_maintenance.html" data-translate="nav-computer-maintenance">Computer Maintenance</a>
+            <a href="digital_marketing.html" data-translate="nav-digital-marketing">Digital Marketing</a>
+            <a href="camera_installation.html" data-translate="nav-camera-installation">Camera Installation</a>
+            <a href="printing.html" data-translate="nav-printing">Printing</a>
+            <a href="services.html" data-translate="nav-all-services">All Services</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" data-translate="nav-about-us">About Us</a>
+          <div class="dropdown-content">
+            <a href="#" data-translate="nav-vision-mission">Vision and Mission</a>
+            <a href="#" data-translate="nav-team">Team</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" data-translate="nav-blog">Blog</a>
+          <div class="dropdown-content">
+            <a href="#" data-translate="nav-tech-news">Tech News</a>
+            <a href="#" data-translate="nav-tutorials">Tutorials</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" data-translate="nav-contact">Contact</a>
+          <div class="dropdown-content">
+            <a href="#" data-translate="nav-support">Support</a>
+            <a href="#" data-translate="nav-sales">Sales</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- Left Side Ad -->
+<div class="side-ad left-ad">
+  <div class="ad-content">
+    <!-- Replace with your ad code or image -->
+    <h3>Ad Space Left</h3>
+    <p>Your ad here</p>
+  </div>
+</div>
+<!-- Right Side Ad -->
+<div class="side-ad right-ad">
+  <div class="ad-content">
+    <!-- Replace with your ad code or image -->
+    <h3>Ad Space Right</h3>
+    <p>Your ad here</p>
+  </div>
+</div>
+  
+  
+
+  <!-- Body Content -->
+
+<div class="featured-image">
+    <img src="images/advertising2.png" alt="Digital marketing" />
+  </div>
+
+  <div class="main-container">
+
+
+  <div class="main-container">
+               
+        <div class="product">
+          <h1>Digital Marketing</h1>
+
+           <!--h2>Branding</h2-->
+          <p>
+            Unlock the power of targeted visibility with Advertising your Business or Event on our Website. Reach a highly engaged audience and elevate your brand’s presence by partnering with us. Our platform offers tailored advertising solutions designed to connect you with the right customers at the right time. Whether through banner ads, sponsored content, or featured listings, we provide the tools and expertise to maximize your reach and drive results. Join the growing list of businesses that have successfully amplified their message with us. Ready to grow your audience and boost your brand? Advertise with us today and let’s make your business shine!
+
+          </p>
+          <!--a href="#" class="read-more">Read More</a-->
+        </div>
+
+  <div class="product product-business">
+    
+    <div class="product-business-flex">
+    <img src="images/digital-marketing.jpg" alt="Digital marketing">
+    <div class="product-business-text">
+    
+      <h2><ins>Reach Far</ins></h2>
+      <p>
+        We are in the era where traditional media—such as newspapers, TV, and radio—is gradually phasing out as consumer habits shift toward digital consumption. With declining readership and viewership, high costs, and limited targeting capabilities, traditional channels struggle to compete, making digital marketing the dominant force in modern advertising.
+        <br><br>        
+        We leverages on online platforms to promote products and services, targeting customers through websites, social media, email, and search engines. Our business uses tailored strategies like SEO, content marketing, and paid ads to boost visibility and engagement. This approach drives traffic, generates leads, and enhances brand awareness efficiently in the digital age.
+      </p>
+      <!--a href="#" class="read-more">Read More</a-->
+    </div>
+    </div>
+</div>
+
+<div class="product product-business">
+    <div class="product-business-flex">
+    <img src="images/camera-home.jpg" alt="Cameras for Home">
+    <div class="product-business-text">
+      <h2><ins>Camera Installations for Home</ins></h2>
+      <p>
+        Home camera installations have become increasingly popular for safeguarding properties and providing peace of mind. These systems typically include indoor and outdoor cameras, often equipped with features like two-way audio, facial recognition, and cloud storage for easy access to footage. Homeowners can install doorbell cameras, floodlight cameras, or wireless systems to monitor entry points, backyards, or common areas. Smart home integration allows cameras to work with devices like smart locks or voice assistants, enabling seamless control. For families, cameras also serve as a tool to check on children, pets, or elderly relatives remotely. Proper placement and regular maintenance ensure optimal performance and coverage.
+      </p>
+      <!--a href="#" class="read-more">Read More</a-->
+    </div>
+    </div>
+</div>
+
+        
+
+      </div>
+
+    
+
+      
+    </div>
+  </div>
+
+<div class="advertisements">
+        <div class="advertisement">
+          <h2>Ad Space 1</h2>
+          <p>Your advertisement here.</p>
+        </div>
+        <div class="advertisement">
+          <h2>Ad Space 2</h2>
+          <p>Your advertisement here.</p>
+        </div>
+      </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-row">
+      <div class="footer-column">
+        <div class="footer-logo" style="margin-bottom: 15px;">
+             <img src="images/prosper.png" alt="Prosper Technology Logo" style="max-width: 120px; height: auto;">
+        </div>
+        <h3 data-translate="footer-services-title">Our Services</h3>
+        <ul>
+          <li><a href="#" data-translate="nav-web-development">Web Development</a></li>
+          <li><a href="#" data-translate="nav-graphics-design">Graphic Design</a></li>
+          <li><a href="#" data-translate="nav-digital-marketing">Digital Marketing</a></li>
+          <li><a href="#" data-translate="product-it-title">IT Consultancy</a></li>
+          <li><a href="#" data-translate="product-camera-installation">Camera Installation</a></li>
+          <li><a href="#" data-translate="printing">Large Format Printing</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3 data-translate="footer-contact-title">Contact Us</h3>
+        <form id="contact-form">
+          <input type="text" id="name" placeholder="Your Name" data-translate-placeholder="form-name">
+          <input type="email" id="email" placeholder="Your Email" data-translate-placeholder="form-email">
+          <textarea id="message" placeholder="Your Message" data-translate-placeholder="form-message"></textarea>
+          <button type="submit" data-translate="form-submit">Send Message</button>
+        </form>
+      </div>
+      <!-- Social Icons Column -->
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100063862875158" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/ProsperTechno" target="_blank"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/prospertechnology" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@prospertechnology4975" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/in/prosper-technology-rwanda-b00513272" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://wa.me/+250781700320" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p><i class="fas fa-map-marker-alt"></i> KN 85 St, Opposite ADEPR Nyarugenge, Kigali-Rwanda</p>
+                <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d362.79607203187436!2d30.05690334931973!3d-1.9483439661999629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca4251cd68537%3A0x6441268f4ae54059!2sKN%2085%20St%2C%20Kigali!5e1!3m2!1sen!2srw!4v1747166425778!5m2!1sen!2srw"
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+      </div>
+      
+    </div>
+    <div class="copyright" data-translate="footer-copyright">
+      © 2025 Prosper Technology Ltd. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Chat Button and Window -->
+<button class="chat-button" onclick="openChat()" aria-label="Open chat">
+  <i class="fas fa-comment"></i>
+</button>
+<div class="chat-window" id="chat-window">
+  <div class="chat-header">
+    <span data-translate="chat-title">Chat with us</span>
+    <button class="close-chat" onclick="closeChat()" aria-label="Close chat">×</button>
+  </div>
+  <div class="chat-body">
+    <form id="chat-form" onsubmit="event.preventDefault(); startChat(event)">
+      <input type="text" id="chat-name" placeholder="Your Name" required>
+      <input type="email" id="chat-email" placeholder="Your Email" required>
+      <button type="submit">Start Chat</button>
+    </form>
+    <div id="chat-content" style="display: none;">
+      <div class="chat-messages" id="chat-messages"></div>
+      <div class="chat-input-container">
+        <textarea id="chat-input" placeholder="Type your message..." 
+                 rows="1"
+                 onkeydown="handleChatInputKey(event)"></textarea>
+        <button class="send-button" onclick="sendMessage()">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
