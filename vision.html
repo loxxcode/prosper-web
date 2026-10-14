@@ -1,171 +1,314 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vision and Mission | Prosper Technology Ltd</title>
-  <meta name="description" content="Prosper Technology Ltd - Your trusted partner for IT services, web design, graphic design, and digital marketing.">
-  <meta name="keywords" content="IT services, web design, graphic design, digital marketing, Prosper Technology Ltd">
-  <link rel="icon" href="images/prosperfav.png" type="image/png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="top-bar">
-    <div class="contact-info">
-      <i class="fas fa-phone"></i><a href="tel:+250781700320" class="phone-link">+250781 700320</a>
-      <i class="fas fa-envelope"></i><a href="mailto:info@prospertechltd.com">info@prospertechltd.com</a>
-      <i class="fas fa-map-marker-alt"></i><a href="https://maps.google.com/?q=KN+85+St,+Kigali,+Rwanda">KN 85 St, Kigali-Rwanda</a>
-    </div>
-    <div class="top-bar-right"><div class="language-switcher"><div class="dropdown">
-      <button class="dropbtn" id="lang-btn"><img src="uk-flag.png" alt="UK Flag" class="flag-icon"><span data-translate="lang-eng">Eng</span><i class="fas fa-chevron-down"></i></button>
-      <div class="dropdown-content" id="lang-dropdown">
-        <a href="#" onclick="switchLanguage('en'); return false;"><img src="uk-flag.png" alt="UK Flag" class="flag-icon"><span data-translate="lang-eng">English</span></a>
-        <a href="#" onclick="switchLanguage('rw'); return false;"><img src="rwanda-flag.png" alt="Rwanda Flag" class="flag-icon"><span data-translate="lang-kinya">Kinyarwanda</span></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vision and Mission | Prosper Technology Ltd</title>
+    <meta
+      name="description"
+      content="Prosper Technology Ltd - Your trusted partner for IT services, web design, graphic design, and digital marketing."
+    />
+    <meta
+      name="keywords"
+      content="IT services, web design, graphic design, digital marketing, Prosper Technology Ltd"
+    />
+    <link rel="icon" href="images/prosperfav.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="contact-info">
+        <i class="fas fa-phone"></i
+        ><a href="tel:+250781700320" class="phone-link">+250781 700320</a>
+        <i class="fas fa-envelope"></i
+        ><a href="mailto:info@prospertechltd.com">info@prospertechltd.com</a>
+        <i class="fas fa-map-marker-alt"></i
+        ><a href="https://maps.google.com/?q=KN+85+St,+Kigali,+Rwanda"
+          >KN 85 St, Kigali-Rwanda</a
+        >
       </div>
-    </div></div></div>
-  </div>
-  <header class="navbar">
-    <div class="logo"><a href="index.html"><img src="images/prosper.png" alt="Prosper Technology Logo"></a></div>
-    <div class="title"><h1>Prosper Technology Ltd</h1></div>
-    <button class="hamburger" onclick="toggleMenu(this)" aria-label="Toggle navigation menu">
-      <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
-    </button>
-    <nav>
-      <ul id="nav-menu">
-        <li><a href="index.html" data-translate="nav-home">Home</a></li>
-        <li class="dropdown"><a href="#" data-translate="nav-services">Services</a><div class="dropdown-content">
-          <a href="web_dev.html" data-translate="nav-web-development">Web Development</a><a href="mobile_apps.html" data-translate="nav-mobile-apps">Mobile Apps</a><a href="graphics_design.html" data-translate="nav-graphics-design">Graphics Design</a><a href="branding.html" data-translate="nav-branding">Branding</a><a href="comp_training.html" data-translate="nav-computer-training">Computer Training</a><a href="comp_maintenance.html" data-translate="nav-computer-maintenance">Computer Maintenance</a><a href="digital_marketing.html" data-translate="nav-digital-marketing">Digital Marketing</a><a href="camera_installation.html" data-translate="nav-camera-installation">Camera Installation</a><a href="printing.html" data-translate="nav-printing">Printing</a><a href="services.html" data-translate="nav-all-services">All Services</a>
-        </div></li>
-        <li class="dropdown"><a href="#" data-translate="nav-about-us">About Us</a><div class="dropdown-content">
-          <a href="vision.html" data-translate="nav-vision-mission">Vision and Mission</a><a href="team.html" data-translate="nav-team">Team</a>
-        </div></li>
-        <li class="dropdown"><a href="#" data-translate="nav-blog">Blog</a><div class="dropdown-content">
-          <a href="tech_news.html" data-translate="nav-tech-news">Tech News</a><a href="tutorials.html" data-translate="nav-tutorials">Tutorials</a>
-        </div></li>
-        <li class="dropdown"><a href="#" data-translate="nav-contact">Contact</a><div class="dropdown-content">
-          <a href="support.html" data-translate="nav-support">Support</a><a href="sales.html" data-translate="nav-sales">Sales</a>
-        </div></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="content-page purpose-page">
-    <section class="content-hero purpose-hero">
-      <span class="content-eyebrow">What guides us</span>
-      <h1>Our vision, mission &amp; values</h1>
-      <p>We believe technology and creativity can open new possibilities for every business. These principles guide how we work and the impact we aim to make.</p>
-    </section>
-
-    <section class="purpose-grid" aria-label="Our purpose">
-      <article class="content-card purpose-card">
-        <!-- <img class="purpose-image" src="images/vision.png" alt="Illustration representing our vision"> -->
-        <div class="purpose-card-content">
-          <span class="purpose-label"><i class="fas fa-eye" aria-hidden="true"></i> The future we see</span>
-          <h2>Our Vision</h2>
-          <p class="purpose-copy typing-container">
-            <span id="typing-text"></span><span class="cursor" aria-hidden="true">|</span>
-          </p>
-        </div>
-      </article>
-
-      <article class="content-card purpose-card">
-        <!-- <img class="purpose-image" src="images/mission.png" alt="Illustration representing our mission"> -->
-        <div class="purpose-card-content">
-          <span class="purpose-label"><i class="fas fa-bullseye" aria-hidden="true"></i> How we get there</span>
-          <h2>Our Mission</h2>
-          <p class="purpose-copy typing-container">
-            <span id="typing-text-mission"></span><span class="cursor" aria-hidden="true">|</span>
-          </p>
-        </div>
-      </article>
-
-      <article class="content-card purpose-values">
-        <div class="values-heading">
-          <div>
-            <span class="purpose-label"><i class="fas fa-gem" aria-hidden="true"></i> What we stand for</span>
-            <h2>Our Core Values</h2>
+      <div class="top-bar-right">
+        <div class="language-switcher">
+          <div class="dropdown">
+            <button class="dropbtn" id="lang-btn">
+              <img src="uk-flag.png" alt="UK Flag" class="flag-icon" /><span
+                data-translate="lang-eng"
+                >Eng</span
+              ><i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content" id="lang-dropdown">
+              <a
+                href="#"
+                onclick="
+                  switchLanguage('en');
+                  return false;
+                "
+                ><img src="uk-flag.png" alt="UK Flag" class="flag-icon" /><span
+                  data-translate="lang-eng"
+                  >English</span
+                ></a
+              >
+              <a
+                href="#"
+                onclick="
+                  switchLanguage('rw');
+                  return false;
+                "
+                ><img
+                  src="rwanda-flag.png"
+                  alt="Rwanda Flag"
+                  class="flag-icon"
+                /><span data-translate="lang-kinya">Kinyarwanda</span></a
+              >
+            </div>
           </div>
-          <img src="images/value.png" alt="" aria-hidden="true">
         </div>
-        <ul class="values-grid">
-          <li><i class="fas fa-check" aria-hidden="true"></i> Integrity</li>
-          <li><i class="fas fa-check" aria-hidden="true"></i> Trust</li>
-          <li><i class="fas fa-check" aria-hidden="true"></i> Quality</li>
-          <li><i class="fas fa-check" aria-hidden="true"></i> Competitiveness</li>
-          <li><i class="fas fa-check" aria-hidden="true"></i> Innovation</li>
-          <li><i class="fas fa-check" aria-hidden="true"></i> Customer Satisfaction</li>
-          <li><i class="fas fa-check" aria-hidden="true"></i> Long-term Relationships</li>
+      </div>
+    </div>
+    <header class="navbar">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="images/prosper.png" alt="Prosper Technology Logo"
+        /></a>
+      </div>
+      <div class="title"><h1>Prosper Technology Ltd</h1></div>
+      <button
+        class="hamburger"
+        onclick="toggleMenu(this)"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="hamburger-line"></span><span class="hamburger-line"></span
+        ><span class="hamburger-line"></span>
+      </button>
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="index.html" data-translate="nav-home">Home</a></li>
+          <li class="dropdown">
+            <a href="#" data-translate="nav-services">Services</a>
+            <div class="dropdown-content">
+              <a href="web_dev.html" data-translate="nav-web-development"
+                >Web Development</a
+              ><a href="mobile_apps.html" data-translate="nav-mobile-apps"
+                >Mobile Apps</a
+              ><a
+                href="graphics_design.html"
+                data-translate="nav-graphics-design"
+                >Graphics Design</a
+              ><a href="branding.html" data-translate="nav-branding">Branding</a
+              ><a
+                href="comp_training.html"
+                data-translate="nav-computer-training"
+                >Computer Training</a
+              ><a
+                href="comp_maintenance.html"
+                data-translate="nav-computer-maintenance"
+                >Computer Maintenance</a
+              ><a
+                href="digital_marketing.html"
+                data-translate="nav-digital-marketing"
+                >Digital Marketing</a
+              ><a
+                href="camera_installation.html"
+                data-translate="nav-camera-installation"
+                >Camera Installation</a
+              ><a href="printing.html" data-translate="nav-printing">Printing</a
+              ><a href="services.html" data-translate="nav-all-services"
+                >All Services</a
+              >
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" data-translate="nav-about-us">About Us</a>
+            <div class="dropdown-content">
+              <a href="vision.html" data-translate="nav-vision-mission"
+                >Vision and Mission</a
+              ><a href="team.html" data-translate="nav-team">Team</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" data-translate="nav-blog">Blog</a>
+            <div class="dropdown-content">
+              <a href="tech_news.html" data-translate="nav-tech-news"
+                >Tech News</a
+              ><a href="tutorials.html" data-translate="nav-tutorials"
+                >Tutorials</a
+              >
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" data-translate="nav-contact">Contact</a>
+            <div class="dropdown-content">
+              <a href="support.html" data-translate="nav-support">Support</a
+              ><a href="sales.html" data-translate="nav-sales">Sales</a>
+            </div>
+          </li>
         </ul>
-      </article>
-    </section>
-  </main>
+      </nav>
+    </header>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-row">
-      <!-- Our Services Column -->
-      <div class="footer-column">
-        <h3>Our Services</h3>
-        <ul>
-          <li><a href="#">Web Development</a></li>
-          <li><a href="#">Graphic Design</a></li>
-          <li><a href="#">Digital Marketing</a></li>
-          <li><a href="#">IT Consultancy</a></li>
-        </ul>
+    <main class="content-page purpose-page">
+      <section class="content-hero purpose-hero">
+        <span class="content-eyebrow">What guides us</span>
+        <h1>Our vision, mission &amp; values</h1>
+        <p>
+          We believe technology and creativity can open new possibilities for
+          every business. These principles guide how we work and the impact we
+          aim to make.
+        </p>
+      </section>
+
+      <section class="purpose-grid" aria-label="Our purpose">
+        <article class="content-card purpose-card">
+          <!-- <img class="purpose-image" src="images/vision.png" alt="Illustration representing our vision"> -->
+          <div class="purpose-card-content">
+            <span class="purpose-label"
+              ><i class="fas fa-eye" aria-hidden="true"></i> The future we
+              see</span
+            >
+            <h2>Our Vision</h2>
+            <p class="purpose-copy typing-container">
+              <span id="typing-text"></span
+              ><span class="cursor" aria-hidden="true">|</span>
+            </p>
+          </div>
+        </article>
+
+        <article class="content-card purpose-card">
+          <!-- <img class="purpose-image" src="images/mission.png" alt="Illustration representing our mission"> -->
+          <div class="purpose-card-content">
+            <span class="purpose-label"
+              ><i class="fas fa-bullseye" aria-hidden="true"></i> How we get
+              there</span
+            >
+            <h2>Our Mission</h2>
+            <p class="purpose-copy typing-container">
+              <span id="typing-text-mission"></span
+              ><span class="cursor" aria-hidden="true">|</span>
+            </p>
+          </div>
+        </article>
+
+        <article class="content-card purpose-values">
+          <div class="values-heading">
+            <div>
+              <span class="purpose-label"
+                ><i class="fas fa-gem" aria-hidden="true"></i> What we stand
+                for</span
+              >
+              <h2>Our Core Values</h2>
+            </div>
+            <img src="images/value.png" alt="" aria-hidden="true" />
+          </div>
+          <ul class="values-grid">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Integrity</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Trust</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Quality</li>
+            <li>
+              <i class="fas fa-check" aria-hidden="true"></i> Competitiveness
+            </li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Innovation</li>
+            <li>
+              <i class="fas fa-check" aria-hidden="true"></i> Customer
+              Satisfaction
+            </li>
+            <li>
+              <i class="fas fa-check" aria-hidden="true"></i> Long-term
+              Relationships
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-row">
+        <!-- Our Services Column -->
+        <div class="footer-column">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">IT Consultancy</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us Column -->
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit"><b>Send Message</b></button>
+          </form>
+        </div>
+
+        <!-- Social Icons Column -->
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
       </div>
+      <p
+        class="copyright"
+        style="
+          text-align: center;
+          font-size: 18px;
+          background-color: #051a35;
+          padding: 10px;
+        "
+      >
+        © 2025 Prosper Technology Ltd. All rights reserved.
+      </p>
+    </footer>
 
-      <!-- Contact Us Column -->
-      <div class="footer-column">
-        <h3>Contact Us</h3>
-        <form>
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <textarea placeholder="Your Message" rows="4" required></textarea>
-          <button type="submit"><b>Send Message</b></button>
-        </form>
+    <!-- Floating Chat Button -->
+    <div class="chat-button" onclick="openChat()">
+      <i class="fas fa-comments"></i>
+    </div>
+
+    <!-- Chat Window -->
+    <div id="chat-window" class="chat-window">
+      <div class="chat-header">
+        <span>Chat with us</span>
+        <button onclick="closeChat()" class="close-chat">&times;</button>
       </div>
-
-      <!-- Social Icons Column -->
-      <div class="footer-column">
-        <h3>Follow Us</h3>
-        <div class="social-icons">
-          <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <div class="chat-body">
+        <div id="chat-form">
+          <input type="text" id="chat-name" placeholder="Your Name" required />
+          <input
+            type="email"
+            id="chat-email"
+            placeholder="Your Email"
+            required
+          />
+          <button onclick="startChat()">Start Chat</button>
+        </div>
+        <div id="chat-content" style="display: none">
+          <div class="chat-messages" id="chat-messages">
+            <!-- Chat messages will appear here -->
+          </div>
+          <input
+            type="text"
+            id="chat-input"
+            placeholder="Type your message..."
+            onkeypress="sendMessage(event)"
+          />
         </div>
       </div>
     </div>
-    <p class="copyright" style="text-align: center; font-size: 18px; background-color: #051a35; padding: 10px;">© 2025 Prosper Technology Ltd. All rights reserved.</p>
-  </footer>
 
-  <!-- Floating Chat Button -->
-  <div class="chat-button" onclick="openChat()">
-    <i class="fas fa-comments"></i>
-  </div>
-
-  <!-- Chat Window -->
-  <div id="chat-window" class="chat-window">
-    <div class="chat-header">
-      <span>Chat with us</span>
-      <button onclick="closeChat()" class="close-chat">&times;</button>
-    </div>
-    <div class="chat-body">
-      <div id="chat-form">
-        <input type="text" id="chat-name" placeholder="Your Name" required>
-        <input type="email" id="chat-email" placeholder="Your Email" required>
-        <button onclick="startChat()">Start Chat</button>
-      </div>
-      <div id="chat-content" style="display: none;">
-        <div class="chat-messages" id="chat-messages">
-          <!-- Chat messages will appear here -->
-        </div>
-        <input type="text" id="chat-input" placeholder="Type your message..." onkeypress="sendMessage(event)">
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -38,7 +38,7 @@ const translations = {
     'who-we-are-2': 'Our mission is to empower businesses with cutting-edge technology and creative designs that drive growth and enhance online presence. Whether you need robust IT support, stunning graphics, a user-friendly website, or effective digital marketing strategies, we are here to make it happen.',
     'who-we-are-3': 'At our core, we value Honesty, trust, quality, Innovation and customer satisfaction. We take pride in building long-lasting relationships with our clients by delivering exceptional services that exceed expectations. Let us be your partner in achieving your digital goals.',
     'vision-title': 'Our Vision',
-    'vision-text': 'Our Vision is to Empower a connected world through innovative Technology Solutions that drive Efficiency, inspire Creativity and transform visibility of our Clients in today’s growing digital world. ✌',
+    'vision-text': 'Our Vision is to Empower a connected world through innovative Technology Solutions that drive Efficiency, inspire Creativity and transform visibility of our Clients in today’s growing digital world.',
     'mission-title': 'Our Mission',
     'mission-text': 'Our mission is to empower businesses with cutting-edge technology and creative designs that drive growth and enhance online presence. Whether you need robust IT support, stunning graphics, a user-friendly website, or effective digital marketing strategies, we are here to make it happen.',
     'product-it-title': 'IT Consultancy Services',

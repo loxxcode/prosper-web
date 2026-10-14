@@ -91,7 +91,7 @@
   }
 
 
-  const text = "Our Vision is to Empower a connected world through innovative Technology Solutions that drive Efficiency, inspire Creativity and transform visibility of our Clients in today's growing digital world. ✌";
+  const text = "Our Vision is to Empower a connected world through innovative Technology Solutions that drive Efficiency, inspire Creativity and transform visibility of our Clients in today's growing digital world.";
 const typingText = document.getElementById("typing-text");
 let index = 0;
 
