@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Prosper Technology Ltd for technical support and service assistance.">
+  <title>Support | Prosper Technology Ltd</title>
+  <link rel="icon" href="images/prosperfav.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="top-bar"><div class="contact-info"><i class="fas fa-phone"></i><a href="tel:+250781700320" class="phone-link">+250781 700320</a><i class="fas fa-envelope"></i><a href="mailto:info@prospertechltd.com">info@prospertechltd.com</a><i class="fas fa-map-marker-alt"></i><a href="https://maps.google.com/?q=KN+85+St,+Kigali,+Rwanda">KN 85 St, Kigali-Rwanda</a></div><div class="top-bar-right"><div class="language-switcher"><div class="dropdown"><button class="dropbtn" id="lang-btn"><img src="uk-flag.png" alt="UK Flag" class="flag-icon"><span data-translate="lang-eng">Eng</span><i class="fas fa-chevron-down"></i></button><div class="dropdown-content" id="lang-dropdown"><a href="#" onclick="switchLanguage('en'); return false;"><img src="uk-flag.png" alt="UK Flag" class="flag-icon"><span data-translate="lang-eng">English</span></a><a href="#" onclick="switchLanguage('rw'); return false;"><img src="rwanda-flag.png" alt="Rwanda Flag" class="flag-icon"><span data-translate="lang-kinya">Kinyarwanda</span></a></div></div></div></div></div>
+  <header class="navbar">
+    <div class="logo"><a href="index.html"><img src="images/prosper.png" alt="Prosper Technology Logo"></a></div>
+    <div class="title"><h1>Prosper Technology Ltd</h1></div>
+    <button class="hamburger" onclick="toggleMenu(this)" aria-label="Toggle navigation menu"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
+    <nav><ul id="nav-menu">
+      <li><a href="index.html" data-translate="nav-home">Home</a></li>
+      <li class="dropdown"><a href="#" data-translate="nav-services">Services</a><div class="dropdown-content"><a href="web_dev.html" data-translate="nav-web-development">Web Development</a><a href="mobile_apps.html" data-translate="nav-mobile-apps">Mobile Apps</a><a href="graphics_design.html" data-translate="nav-graphics-design">Graphics Design</a><a href="branding.html" data-translate="nav-branding">Branding</a><a href="comp_training.html" data-translate="nav-computer-training">Computer Training</a><a href="comp_maintenance.html" data-translate="nav-computer-maintenance">Computer Maintenance</a><a href="digital_marketing.html" data-translate="nav-digital-marketing">Digital Marketing</a><a href="camera_installation.html" data-translate="nav-camera-installation">Camera Installation</a><a href="printing.html" data-translate="nav-printing">Printing</a><a href="services.html" data-translate="nav-all-services">All Services</a></div></li>
+      <li class="dropdown"><a href="#" data-translate="nav-about-us">About Us</a><div class="dropdown-content"><a href="vision.html" data-translate="nav-vision-mission">Vision and Mission</a><a href="team.html" data-translate="nav-team">Team</a></div></li>
+      <li class="dropdown"><a href="#" data-translate="nav-blog">Blog</a><div class="dropdown-content"><a href="tech_news.html" data-translate="nav-tech-news">Tech News</a><a href="tutorials.html" data-translate="nav-tutorials">Tutorials</a></div></li>
+      <li class="dropdown"><a href="#" data-translate="nav-contact">Contact</a><div class="dropdown-content"><a href="support.html" data-translate="nav-support">Support</a><a href="sales.html" data-translate="nav-sales">Sales</a></div></li>
+    </ul></nav>
+  </header>
+
+  <main class="content-page">
+    <section class="content-hero">
+      <span class="content-eyebrow">We're here to help</span>
+      <h1>Support</h1>
+      <p>Need assistance with a service or have a technical question? Contact our team and tell us how we can help.</p>
+    </section>
+    <section class="content-grid" aria-label="Contact support">
+      <article class="content-card">
+        <i class="fas fa-envelope content-icon" aria-hidden="true"></i>
+        <h2>Email Support</h2>
+        <p>Send a description of the issue, the service you use, and the best way to reach you.</p>
+        <a class="content-link" href="mailto:info@prospertechltd.com?subject=Support%20request">info@prospertechltd.com</a>
+      </article>
+      <article class="content-card">
+        <i class="fas fa-phone content-icon" aria-hidden="true"></i>
+        <h2>Call Our Team</h2>
+        <p>Speak with us directly about service questions and support needs.</p>
+        <a class="content-link" href="tel:+250781700320">+250 781 700320</a>
+      </article>
+      <article class="content-card">
+        <i class="fas fa-location-dot content-icon" aria-hidden="true"></i>
+        <h2>Visit Us</h2>
+        <p>KN 85 St, opposite ADEPR Nyarugenge, Kigali, Rwanda.</p>
+        <a class="content-link" href="https://maps.google.com/?q=KN+85+St,+Kigali,+Rwanda" target="_blank" rel="noopener noreferrer">Open directions <span aria-hidden="true">→</span></a>
+      </article>
+    </section>
+  </main>
+
+  <footer><div class="copyright">© 2025 Prosper Technology Ltd. All rights reserved.</div></footer>
+</body>
+</html>

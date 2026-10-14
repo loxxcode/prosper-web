@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the people and expertise behind Prosper Technology Ltd.">
+  <title>Our Team | Prosper Technology Ltd</title>
+  <link rel="icon" href="images/prosperfav.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="contact-info">
+      <i class="fas fa-phone"></i><a href="tel:+250781700320" class="phone-link">+250781 700320</a>
+      <i class="fas fa-envelope"></i><a href="mailto:info@prospertechltd.com">info@prospertechltd.com</a>
+      <i class="fas fa-map-marker-alt"></i><a href="https://maps.google.com/?q=KN+85+St,+Kigali,+Rwanda">KN 85 St, Kigali-Rwanda</a>
+    </div>
+    <div class="top-bar-right"><div class="language-switcher"><div class="dropdown">
+      <button class="dropbtn" id="lang-btn"><img src="uk-flag.png" alt="UK Flag" class="flag-icon"><span data-translate="lang-eng">Eng</span><i class="fas fa-chevron-down"></i></button>
+      <div class="dropdown-content" id="lang-dropdown">
+        <a href="#" onclick="switchLanguage('en'); return false;"><img src="uk-flag.png" alt="UK Flag" class="flag-icon"><span data-translate="lang-eng">English</span></a>
+        <a href="#" onclick="switchLanguage('rw'); return false;"><img src="rwanda-flag.png" alt="Rwanda Flag" class="flag-icon"><span data-translate="lang-kinya">Kinyarwanda</span></a>
+      </div>
+    </div></div></div>
+  </div>
+  <header class="navbar">
+    <div class="logo"><a href="index.html"><img src="images/prosper.png" alt="Prosper Technology Logo"></a></div>
+    <div class="title"><h1>Prosper Technology Ltd</h1></div>
+    <button class="hamburger" onclick="toggleMenu(this)" aria-label="Toggle navigation menu">
+      <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+    </button>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="index.html" data-translate="nav-home">Home</a></li>
+        <li class="dropdown"><a href="#" data-translate="nav-services">Services</a><div class="dropdown-content">
+          <a href="web_dev.html" data-translate="nav-web-development">Web Development</a><a href="mobile_apps.html" data-translate="nav-mobile-apps">Mobile Apps</a><a href="graphics_design.html" data-translate="nav-graphics-design">Graphics Design</a><a href="branding.html" data-translate="nav-branding">Branding</a><a href="comp_training.html" data-translate="nav-computer-training">Computer Training</a><a href="comp_maintenance.html" data-translate="nav-computer-maintenance">Computer Maintenance</a><a href="digital_marketing.html" data-translate="nav-digital-marketing">Digital Marketing</a><a href="camera_installation.html" data-translate="nav-camera-installation">Camera Installation</a><a href="printing.html" data-translate="nav-printing">Printing</a><a href="services.html" data-translate="nav-all-services">All Services</a>
+        </div></li>
+        <li class="dropdown"><a href="#" data-translate="nav-about-us">About Us</a><div class="dropdown-content">
+          <a href="vision.html" data-translate="nav-vision-mission">Vision and Mission</a><a href="team.html" data-translate="nav-team">Team</a>
+        </div></li>
+        <li class="dropdown"><a href="#" data-translate="nav-blog">Blog</a><div class="dropdown-content">
+          <a href="tech_news.html" data-translate="nav-tech-news">Tech News</a><a href="tutorials.html" data-translate="nav-tutorials">Tutorials</a>
+        </div></li>
+        <li class="dropdown"><a href="#" data-translate="nav-contact">Contact</a><div class="dropdown-content">
+          <a href="support.html" data-translate="nav-support">Support</a><a href="sales.html" data-translate="nav-sales">Sales</a>
+        </div></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content-page">
+    <section class="content-hero">
+      <span class="content-eyebrow">People behind the solutions</span>
+      <h1>Our Team</h1>
+      <p>Our team brings together technical knowledge, creative thinking, and a commitment to helping clients make the most of technology.</p>
+    </section>
+    <section class="content-grid" aria-label="Our areas of expertise">
+      <article class="content-card">
+        <i class="fas fa-laptop-code content-icon" aria-hidden="true"></i>
+        <h2>Technology and Development</h2>
+        <p>Our technology specialists build and maintain websites, applications, and IT systems to support everyday business needs.</p>
+      </article>
+      <article class="content-card">
+        <i class="fas fa-palette content-icon" aria-hidden="true"></i>
+        <h2>Design and Digital</h2>
+        <p>Our design and digital team creates clear visual identities and helps businesses communicate with their audiences online.</p>
+      </article>
+      <article class="content-card">
+        <i class="fas fa-headset content-icon" aria-hidden="true"></i>
+        <h2>Client Support</h2>
+        <p>We work alongside our clients, listening to their goals and providing practical guidance throughout each project.</p>
+        <a class="content-link" href="support.html">Contact Support <span aria-hidden="true">→</span></a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="copyright">© 2025 Prosper Technology Ltd. All rights reserved.</div>
+  </footer>
+</body>
+</html>
